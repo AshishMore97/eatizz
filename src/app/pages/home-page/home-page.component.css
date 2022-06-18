@@ -1,0 +1,537 @@
+.page-section-pt {
+    padding: 30px 0 15px;
+}
+
+.banner {
+    width: 100%;
+
+    background: linear-gradient(to right,
+            #fff5ec 0%,
+            #fff5ec 70%,
+            #fe043c 70%,
+            #fe043c 100%);
+
+}
+
+@media only screen and (max-width: 768px) {
+    .banner {
+        width: 100%;
+        background: #fff5ec;
+    }
+
+    .food-image{
+        display:none;
+    }
+
+    .sticky-lettuc{
+        display: none;
+    }
+
+    .fixed-cabbage{
+        display: none;
+    }
+}
+
+.banner-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.banner-text h2 {
+    font-size: 35px;
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+.search .form-control {
+    /* border-left: 0px; */
+    height: 50px;
+    /* border-radius: 25px !important; */
+    font-size: 14px;
+    color: var(--secondary-color);
+    border: none;
+    background: rgba(255, 255, 255, 0.295);
+    box-shadow: 0px 0px 9px 4px #0000001f;
+    padding: 10px 15px;
+    /* width: 100%; */
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+.search .form-control:focus {
+    border: 0;
+    box-shadow: 0px 0px 9px 4px #0000001f;
+    transition: all 0.3s ease-out 0s;
+    background: rgba(255, 255, 255, 0.884);
+}
+
+.search .search-btn {
+    z-index: 100;
+}
+
+.search-btn {
+    margin-left: -90px !important;
+    border-top-left-radius: 20px !important;
+    box-shadow: 0px 0px 9px 4px #0000001f;
+    padding: 0px 32px;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.food-image {
+    position: relative;
+}
+
+.lettuc-img {
+    float: right;
+    margin-right: 70px;
+    margin-top: -60px;
+    margin-bottom: 12rem;
+}
+
+.food-plate {
+    position: absolute;
+    margin-top: 8rem;
+    margin-left: 8rem;
+    z-index: 5;
+}
+
+
+.polka-dot {
+    position: absolute;
+    top: 9rem;
+    left: 9rem;
+    width: 267px;
+    height: 307px;
+    background-color: transparent;
+    background-image: radial-gradient(#6c757d5e 8%, transparent 10%), radial-gradient(#6c757d5e 8%, transparent 10%);
+    background-size: 60px 60px;
+    background-position: 35px 25px, 35px -3px;
+    background-repeat: repeat;
+}
+
+.polka-gray-dot {
+    position: absolute;
+    top: 24rem;
+    left: 9rem;
+    width: 267px;
+    height: 307px;
+    background-color: transparent;
+    background-image: radial-gradient(#6c757d5e 8%, transparent 10%), radial-gradient(#6c757d5e 8%, transparent 10%);
+    background-size: 60px 60px;
+    background-position: 35px 25px, 35px -3px;
+    ;
+    background-repeat: repeat;
+}
+
+/* .food-image::before{
+    content: '';
+    position: absolute;
+    top: 9rem;
+    right: 28rem;
+   
+    border-radius: 10px;
+    z-index: 0;
+    width: 20%;
+    height: 65%;
+    background: url('src/assets/images/bacground-vector/Group1.png') repeat 0 0;
+}
+.food-image::after{
+    content: '';
+    position: absolute;
+    bottom: -16.5rem;
+    right: 28rem;
+   
+    border-radius: 10px;
+    z-index: 0;
+    width: 20%;
+    height: 65%;
+    background: url('src/assets/images/bacground-vector/Group2.png') repeat 0 0;
+} */
+
+.food-image img {
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+.search-food {
+    width: 80%;
+}
+
+.location {
+    display: flex;
+    position: absolute;
+    right: 29rem;
+    top: 30rem;
+    background-color: #fe043c;
+    color: white;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    width: fit-content;
+    padding: 0.6rem 4rem;
+    align-items: center;
+    grid-gap: 1rem;
+    gap: 1rem;
+}
+
+.location p {
+    margin-bottom: 0rem;
+}
+
+.custom-div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.custom-div p {
+    margin-bottom: 0rem;
+}
+
+
+.vl {
+    border-left: 10px solid #fe043c;
+    height: 48px;
+
+}
+
+.title {
+    font-size: 18px;
+    text-transform: capitalize;
+    color: var(--secondary-color);
+
+}
+
+
+/* see more hotels section css start */
+.custom-card {
+    width: 80%;
+}
+
+.custom-card-overlay {
+    height: fit-content;
+    background: #fe043c8c;
+    top: 14rem;
+}
+
+.right-arrow {
+    text-align: center;
+    margin: 10em 0 0 8em;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.right-arrow a {
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.see-more {
+    text-decoration: none;
+    color: #fe043c;
+    font-size: 22px;
+}
+
+.right {
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+    background: #fe043c;
+    border: 0.2em solid #fe043c;
+    border-radius: 50%;
+    margin-left: 1.5em;
+}
+
+.right:after {
+    content: '';
+    display: inline-block;
+    margin-top: 0.8em;
+    margin-left: -0.6em;
+    width: 1em;
+    height: 1em;
+    border-top: 0.3em solid #f9fafb;
+    border-right: 0.3em solid #f9fafb;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+hr.line {
+    position: absolute;
+    width: 4.4rem;
+    top: 0.3rem;
+    right: 2rem;
+    border: 2px solid #fe043c;
+    opacity: 1.25;
+
+}
+
+.card-hotel {
+    position: relative;
+}
+
+.polka-card-d-dot {
+    position: absolute;
+    top: 10rem;
+    left: 14rem;
+    width: 267px;
+    height: 285px;
+    background-color: transparent;
+    background-image: radial-gradient(#6c757d5e 8%, transparent 10%), radial-gradient(#6c757d5e 8%, transparent 10%);
+    background-size: 35px 50px;
+    background-position: 35px 25px, 35px -1px;
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+/* see more hotels section css End */
+
+
+/* Advance Booking section css Start*/
+.bg-color-book-advance {
+    background: #ffedde;
+}
+
+.sticky-lettuc {
+    position: relative;
+    right: 15rem;
+    z-index: 2;
+}
+
+.horizontal-line {
+    border: 3px solid #fe043c;
+    opacity: 1.25;
+    width: 5em;
+}
+
+.title-advance {
+    font-size: 40px;
+    color: var(--secondary-color);
+}
+
+.book-advance-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.book-card-row {
+    margin-left: -32rem;
+    margin-bottom: 4em;
+
+}
+
+.book-ad-card {
+    width: 64rem;
+    height: 30rem;
+    z-index: 1;
+    border: 1px solid rgb(0 0 0 / 0%);
+}
+
+.book-card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    text-align: center;
+}
+
+.book-card-body .form-control {
+    height: 50px;
+    /* border-radius: 25px !important; */
+    font-size: 14px;
+    color: var(--secondary-color);
+    border: none;
+    background: rgba(255, 255, 255, 0.295);
+    box-shadow: 0px 0px 9px 4px #0000001f;
+    padding: 10px 15px;
+    width: 70%;
+    transition: all 0.3s ease-out 0s;
+}
+
+.polka-dots {
+    position: absolute;
+    top: 2rem;
+    left: 68rem;
+    width: 267px;
+    height: 311px;
+    background-color: transparent;
+    background-image: radial-gradient(#312e2a4d 8%, transparent 10%), radial-gradient(#312e2a4d 8%, #ffedde 10%);
+    background-size: 35px 50px;
+    background-position: 35px 29px, 35px 3px;
+    background-repeat: repeat;
+    z-index: 0;
+}
+
+.booking-search-polka {
+    position: absolute;
+    bottom: 6rem;
+    right: 68rem;
+    width: 267px;
+    height: 311px;
+    background-color: transparent;
+    background-image: radial-gradient(#312e2a4d 8%, transparent 10%), radial-gradient(#312e2a4d 8%, #ffedde 10%);
+    background-size: 35px 50px;
+    background-position: 35px 29px, 35px 3px;
+    background-repeat: repeat;
+    z-index: 0;
+}
+
+.fixed-cabbage {
+    position: relative;
+    left: 0rem;
+}
+
+.select-booking-time {
+    display: flex;
+    gap: 3rem;
+    justify-content: space-evenly;
+    width: 30em;
+}
+
+.select-booking-time .form-select {
+    width: 100%;
+    margin-left: 1em;
+    border: none;
+    background: rgba(255, 255, 255, 0.295);
+    box-shadow: 0px 0px 9px 4px #0000001f;
+    text-align: center;
+}
+
+.search-restaurants {
+    margin-top: 3em;
+}
+
+.custom-vooking-input {
+    width: 30em;
+    margin-bottom: 4em;
+}
+
+.btn-search {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    box-shadow: 1px 1px 7px 3px #00000026;
+    width: 6em;
+}
+
+
+/* display food menu css start */
+
+.food-menu h3 {
+    color: var(--secondary-color);
+}
+
+.food-menu p {
+    color: #6c757d;
+}
+
+.custom-card-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.custom-card-header h5 {
+    size: 20px;
+    color: var(--secondary-color);
+}
+
+.custom-card-header h4 {
+    size: 22px;
+    color: #f98169;
+}
+
+.food-menu-card {
+    width: 22rem;
+    border: none;
+}
+
+.food-menu-body p {
+    color: var(--secondary-color);
+}
+
+
+/* download app section css start */
+.bg-color-download-app {
+    background-color: #ffedde;
+}
+
+.vertical-line {
+    border-left: 12px solid #fe043c;
+    height: 80px;
+}
+
+
+.download-app-header {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.download-app-header h4 {
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+.download-app-text{
+    display: flex;
+    gap: 4rem;
+}
+
+/* .download-app-row{
+    position: relative;
+} */
+
+.download-app-column{
+    display: flex;
+    flex-direction: column;
+    height: 50rem;
+    justify-content: center;
+}
+
+.app-image-column{
+    position: relative;;
+}
+
+.polka-dot-app{
+    position: absolute;
+    top: 9rem;
+    left: 0rem;
+    width: 267px;
+    height: 311px;
+    background-color: transparent;
+    background-image: radial-gradient(#312e2a4d 9%, transparent 10%), radial-gradient(#312e2a4d 9%, #ffedde 10%);
+    background-size: 35px 50px;
+    background-position: 35px 29px, 35px 3px;
+    background-repeat: repeat;
+    z-index: 0;
+}
+
+.app-image{
+    z-index: 6;
+    position: relative;
+}
+
+.product-image{
+    position: absolute;
+    top: 3rem;
+    z-index: 7;
+    left: 9.2rem;
+}
+
+.cabbage-leaf-bg{
+    position: absolute;
+    bottom: 5rem;
+    right: 18rem;
+}

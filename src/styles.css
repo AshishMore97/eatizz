@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --primary-color: #fe043c;
+    --secondary-color:#2e266f;
+}
+
+body{
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+}

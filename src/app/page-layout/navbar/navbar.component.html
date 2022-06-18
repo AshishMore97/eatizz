@@ -1,0 +1,37 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3 " onscroll="addclass();">
+    <div class="container">
+        <a class="navbar-brand" routerLink="/">
+            <img src="assets/images/logo/eatizz-logo.png" alt="" width="152" height="52" class="d-inline-block align-text-top">
+            
+          </a>
+      
+      <button class="navbar-toggler" type="button" (click)="navBarOpen()" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav" [ngClass]="{'show':navOpen}">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" routerLink="/" routerLinkActive="active-link" >Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="about-us" routerLinkActive="active-link">Menu 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/" routerLinkActive="active-link">Menu 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " routerLink="/" routerLinkActive="active-link">Menu 3</a>
+          </li>
+        </ul>
+      </div>
+      <div class="collapse navbar-collapse justify-content-end" [ngClass]="{'show':navOpen}">
+        <img src="assets/images/banner/user-logo.jpg" alt="" width="50" height="45" class="custom-image">
+        <button class="btn dropdown-toggle user-dropdown-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">User </button>
+        <!-- <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          
+        </ul> -->
+      </div>
+      
+    </div>
+</nav>
