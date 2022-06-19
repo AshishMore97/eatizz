@@ -141,5 +141,35 @@
     text-decoration: none;
 }
 
+@media only screen and (max-width: 768px){
+    .leaf-image{
+        display: none;;
+    }
+
+    .footer-container{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .footer-row{
+        margin-bottom: 2rem;
+        position: relative;
+        right: 0rem;
+    }
+
+    .social-icons{
+        display: flex;
+    /* align-items: flex-end; */
+    justify-content: center;
+    }
+
+    .copyright-content{
+        display: flex;
+    /* align-items: flex-end; */
+    justify-content: center;
+    }
+}
+
 
 

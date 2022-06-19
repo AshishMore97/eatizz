@@ -14,120 +14,272 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .page-section-pt {
+        padding: 30px 0 15px;
+    }
+
     .banner {
         width: 100%;
         background: #fff5ec;
     }
 
-    .food-image{
-        display:none;
+    .search .search-btn {
+        z-index: 100;
+    }
+    
+    .search-btn {
+        margin-left: -90px !important;
+        border-top-left-radius: 20px !important;
+        box-shadow: 0px 0px 9px 4px #0000001f;
+        padding: 0px 32px;
+        background-color: var(--primary-color);
+        color: #fff;
     }
 
-    .sticky-lettuc{
+    .search .form-control {
+        /* border-left: 0px; */
+        height: 50px;
+        /* border-radius: 25px !important; */
+        font-size: 14px;
+        color: var(--secondary-color);
+        border: none;
+        background: rgba(255, 255, 255, 0.295);
+        box-shadow: 0px 0px 9px 4px #0000001f;
+        padding: 10px 15px;
+        /* width: 100%; */
+        -webkit-transition: all 0.3s ease-out 0s;
+        -moz-transition: all 0.3s ease-out 0s;
+        -ms-transition: all 0.3s ease-out 0s;
+        -o-transition: all 0.3s ease-out 0s;
+        transition: all 0.3s ease-out 0s;
+    }
+    
+    .search .form-control:focus {
+        border: 0;
+        box-shadow: 0px 0px 9px 4px #0000001f;
+        transition: all 0.3s ease-out 0s;
+        background: rgba(255, 255, 255, 0.884);
+    }
+
+    .location{
+        display: flex;
+        position: relative;
+        top: 0;
+        right: 1rem !important;
+        background-color: #fe043c;
+        color: white;
+        border-bottom-right-radius: 25px;
+        border-top-right-radius: 25px;
+        width: -moz-fit-content;
+        width: fit-content;
+        padding: 0.6rem 4rem;
+        align-items: center;
+        grid-gap: 1rem;
+        grid-gap: 1rem;
+        gap: 1rem;
+    }
+
+    .food-image {
         display: none;
     }
 
-    .fixed-cabbage{
+    .sticky-lettuc {
         display: none;
     }
+
+    .fixed-cabbage {
+        display: none;
+    }
+
+    .polka-dots {
+        display: none;
+    }
+
+    .polka-card-d-dot {
+        display: none;
+    }
+
+    .app-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mobile-app-image {
+        height: 20rem !important;
+    }
+
+    .product-image {
+        display: flex;
+        justify-content: center;
+        top: 1.4rem !important;
+        z-index: 7 ;
+        left: 9.2rem !important;
+    }
+
+    .product-page-img {
+        width: 7rem !important;
+        height: 16rem !important;
+    }
+
+    .cabbage-leaf-bg {
+        display: none;
+    }
+
+    .select-booking-time {
+        display: flex;
+        flex-direction: column;
+        
+        gap: 3rem;
+        justify-content: space-evenly;
+        width: fit-content !important;
+    }
+
+    .book-card-row {
+       
+        margin-bottom: 4em;
+    }
+
+    .book-ad-card {
+        width: fit-content !important;
+        height: fit-content !important;
+        z-index: 0;
+        border: 1px solid rgb(0 0 0 / 0%);
+    }
+
+    .custom-vooking-input {
+        width: 20em !important;
+        margin-bottom: 4em;
+    }
+
+    .fixed-cabbage {
+        display: none;
+    }
+
+    .polka-dot-app {
+        display: none;
+    }
+
+    .playstore-image {
+        width: 95%;
+    }
+
+    .app-store-img {
+        width: 82%;
+    }
+
+    .download-app-column {
+        display: flex;
+        flex-direction: column;
+         height: auto !important;
+        justify-content: center;
+    }
+
 }
 
-.banner-text {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-}
+/* No less than 400px, no greater than 900px */
+@media (min-width:1200px) and (max-width:1920px) {
+    .banner-text {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+    }
 
-.banner-text h2 {
-    font-size: 35px;
-    color: var(--secondary-color);
-    font-weight: 700;
-}
+    .banner-text h2 {
+        font-size: 35px;
+        color: var(--secondary-color);
+        font-weight: 700;
+    }
+    .search .form-control {
+        /* border-left: 0px; */
+        height: 50px;
+        /* border-radius: 25px !important; */
+        font-size: 14px;
+        color: var(--secondary-color);
+        border: none;
+        background: rgba(255, 255, 255, 0.295);
+        box-shadow: 0px 0px 9px 4px #0000001f;
+        padding: 10px 15px;
+        /* width: 100%; */
+        -webkit-transition: all 0.3s ease-out 0s;
+        -moz-transition: all 0.3s ease-out 0s;
+        -ms-transition: all 0.3s ease-out 0s;
+        -o-transition: all 0.3s ease-out 0s;
+        transition: all 0.3s ease-out 0s;
+    }
+    
+    .search .form-control:focus {
+        border: 0;
+        box-shadow: 0px 0px 9px 4px #0000001f;
+        transition: all 0.3s ease-out 0s;
+        background: rgba(255, 255, 255, 0.884);
+    }
+    
+    .search .search-btn {
+        z-index: 100;
+    }
+    
+    .search-btn {
+        margin-left: -90px !important;
+        border-top-left-radius: 20px !important;
+        box-shadow: 0px 0px 9px 4px #0000001f;
+        padding: 0px 32px;
+        background-color: var(--primary-color);
+        color: #fff;
+    }
+    
+    .food-image {
+        position: relative;
+    }
+    
+    .lettuc-img {
+        float: right;
+        margin-right: 70px;
+        margin-top: -60px;
+        margin-bottom: 12rem;
+    }
+    
+    .food-plate {
+        position: absolute;
+        margin-top: 8rem;
+        margin-left: 8rem;
+        z-index: 5;
+    }
+    
+    
+    .polka-dot {
+        position: absolute;
+        top: 9rem;
+        left: 9rem;
+        width: 267px;
+        height: 307px;
+        background-color: transparent;
+        background-image: radial-gradient(#6c757d5e 8%, transparent 10%), radial-gradient(#6c757d5e 8%, transparent 10%);
+        background-size: 60px 60px;
+        background-position: 35px 25px, 35px -3px;
+        background-repeat: repeat;
+    }
+    
+    .polka-gray-dot {
+        position: absolute;
+        top: 24rem;
+        left: 9rem;
+        width: 267px;
+        height: 307px;
+        background-color: transparent;
+        background-image: radial-gradient(#6c757d5e 8%, transparent 10%), radial-gradient(#6c757d5e 8%, transparent 10%);
+        background-size: 60px 60px;
+        background-position: 35px 25px, 35px -3px;
+        background-repeat: repeat;
+    
+    }
 
-.search .form-control {
-    /* border-left: 0px; */
-    height: 50px;
-    /* border-radius: 25px !important; */
-    font-size: 14px;
-    color: var(--secondary-color);
-    border: none;
-    background: rgba(255, 255, 255, 0.295);
-    box-shadow: 0px 0px 9px 4px #0000001f;
-    padding: 10px 15px;
-    /* width: 100%; */
-    -webkit-transition: all 0.3s ease-out 0s;
-    -moz-transition: all 0.3s ease-out 0s;
-    -ms-transition: all 0.3s ease-out 0s;
-    -o-transition: all 0.3s ease-out 0s;
-    transition: all 0.3s ease-out 0s;
-}
+    .book-card-row {
+        margin-left: -32rem;
+        margin-bottom: 4em;
+    }
+}​
 
-.search .form-control:focus {
-    border: 0;
-    box-shadow: 0px 0px 9px 4px #0000001f;
-    transition: all 0.3s ease-out 0s;
-    background: rgba(255, 255, 255, 0.884);
-}
-
-.search .search-btn {
-    z-index: 100;
-}
-
-.search-btn {
-    margin-left: -90px !important;
-    border-top-left-radius: 20px !important;
-    box-shadow: 0px 0px 9px 4px #0000001f;
-    padding: 0px 32px;
-    background-color: var(--primary-color);
-    color: #fff;
-}
-
-.food-image {
-    position: relative;
-}
-
-.lettuc-img {
-    float: right;
-    margin-right: 70px;
-    margin-top: -60px;
-    margin-bottom: 12rem;
-}
-
-.food-plate {
-    position: absolute;
-    margin-top: 8rem;
-    margin-left: 8rem;
-    z-index: 5;
-}
-
-
-.polka-dot {
-    position: absolute;
-    top: 9rem;
-    left: 9rem;
-    width: 267px;
-    height: 307px;
-    background-color: transparent;
-    background-image: radial-gradient(#6c757d5e 8%, transparent 10%), radial-gradient(#6c757d5e 8%, transparent 10%);
-    background-size: 60px 60px;
-    background-position: 35px 25px, 35px -3px;
-    background-repeat: repeat;
-}
-
-.polka-gray-dot {
-    position: absolute;
-    top: 24rem;
-    left: 9rem;
-    width: 267px;
-    height: 307px;
-    background-color: transparent;
-    background-image: radial-gradient(#6c757d5e 8%, transparent 10%), radial-gradient(#6c757d5e 8%, transparent 10%);
-    background-size: 60px 60px;
-    background-position: 35px 25px, 35px -3px;
-    ;
-    background-repeat: repeat;
-}
 
 /* .food-image::before{
     content: '';
@@ -168,9 +320,9 @@
 
 .location {
     display: flex;
-    position: absolute;
-    right: 29rem;
-    top: 30rem;
+    position: relative;
+    top: 0;
+    right: 10rem;
     background-color: #fe043c;
     color: white;
     border-bottom-right-radius: 25px;
@@ -325,11 +477,7 @@ hr.line {
     position: relative;
 }
 
-.book-card-row {
-    margin-left: -32rem;
-    margin-bottom: 4em;
 
-}
 
 .book-ad-card {
     width: 64rem;
@@ -484,7 +632,7 @@ hr.line {
     color: var(--secondary-color);
 }
 
-.download-app-text{
+.download-app-text {
     display: flex;
     gap: 4rem;
 }
@@ -493,18 +641,19 @@ hr.line {
     position: relative;
 } */
 
-.download-app-column{
+.download-app-column {
     display: flex;
     flex-direction: column;
     height: 50rem;
     justify-content: center;
 }
 
-.app-image-column{
-    position: relative;;
+.app-image-column {
+    position: relative;
+    ;
 }
 
-.polka-dot-app{
+.polka-dot-app {
     position: absolute;
     top: 9rem;
     left: 0rem;
@@ -518,19 +667,19 @@ hr.line {
     z-index: 0;
 }
 
-.app-image{
+.app-image {
     z-index: 6;
     position: relative;
 }
 
-.product-image{
+.product-image {
     position: absolute;
     top: 3rem;
     z-index: 7;
     left: 9.2rem;
 }
 
-.cabbage-leaf-bg{
+.cabbage-leaf-bg {
     position: absolute;
     bottom: 5rem;
     right: 18rem;

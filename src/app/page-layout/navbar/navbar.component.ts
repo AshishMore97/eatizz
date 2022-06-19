@@ -6,6 +6,8 @@ import { Component, OnInit,AfterViewInit, HostListener } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit, AfterViewInit {
+
+  public isCollapsed = true;
   public navOpen = false;
   constructor() { }
 

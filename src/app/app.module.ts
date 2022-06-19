@@ -11,7 +11,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-
+import { FormsModule } from '@angular/forms';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,9 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     FontAwesomeModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    CarouselModule 
+    CarouselModule,
+    FormsModule,
+    CollapseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
